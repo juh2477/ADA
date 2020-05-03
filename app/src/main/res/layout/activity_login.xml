@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnCadastrar2"
+        android:layout_width="126dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/titillium_web_semibold"
+        android:onClick="onClickCadastrar"
+        android:text="cadastre-se"
+        android:textAllCaps="false"
+        android:textColor="#EE4C7D"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextSenhaLogin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/botton_style2"
+        android:fontFamily="@font/titillium_web_semibold"
+        android:text="ENTRAR"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="50dp"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/editTextEmailLogin"
+        android:layout_width="283dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textViewLogin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/text_style"
+        android:ems="10"
+        android:fontFamily="@font/abeezee"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editTextSenhaLogin"
+        android:layout_width="277dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/editTextEmailLogin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/text_style"
+        android:ems="10"
+        android:fontFamily="@font/abeezee"
+        android:hint="senha"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        style="@android:style/Widget.Holo.Light.Button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/setinha2"
+        android:backgroundTint="#FF97AF"
+        android:onClick="onCLickVoltar"
+        android:textAppearance="@style/AppTheme" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="285dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/btnEntrar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="30dp" />
+
+</RelativeLayout>

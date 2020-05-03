@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilActivity"
+    android:background="@drawable/background2">
+
+    <Button
+        android:id="@+id/btnVoltar2"
+        style="@android:style/Widget.Holo.Light.Button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/setinha2"
+        android:backgroundTint="#FF97AF"
+        android:onClick="onCLickVoltar"
+        android:textAppearance="@style/AppTheme"
+        android:textColor="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/minhaFoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/com_facebook_profile_picture_blank_square"/>
+
+    <TextView
+        android:id="@+id/meuNome"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/minhaFoto"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/text_style"
+        android:fontFamily="@font/abeezee"
+        android:gravity="center"
+        android:text="Nome"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/meuEmail"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/meuNome"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/text_style"
+        android:fontFamily="@font/abeezee"
+        android:gravity="center"
+        android:text="Email"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meuEmail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/botton_style2"
+        android:fontFamily="@font/titillium_web_semibold"
+        android:text="sair"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+</RelativeLayout>

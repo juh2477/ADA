@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ADA</string>
+    <string name="facebook_app_id">278160320014670</string>
+    <string name="fb_login_protocol_scheme">fb278160320014670</string>
+</resources>
